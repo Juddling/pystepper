@@ -17,10 +17,10 @@ for pin in StepPins:
  
 # Define advanced sequence
 # as shown in manufacturers datasheet
-Seq = [[1,1,0,0],
-       [0,1,1,0],
-       [0,0,1,1],
-       [1,0,0,1]]
+Seq = [[0,0,1,1],
+       [1,0,0,1],
+       [1,1,0,0],
+       [0,1,1,0]]
         
 StepCount = len(Seq)
 StepDir = 1 # Set to 1 or 2 for clockwise
