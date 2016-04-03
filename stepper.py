@@ -5,6 +5,7 @@ import RPi.GPIO as GPIO
 # Use BCM GPIO references
 # instead of physical pin numbers
 GPIO.setmode(GPIO.BCM)
+GPIO.cleanup()
  
 # Define GPIO signals to use
 StepPins = [5,6,13,19]
@@ -13,7 +14,7 @@ StepPins = [5,6,13,19]
 for pin in StepPins:
   print "Setup pins"
   GPIO.setup(pin,GPIO.OUT)
-  GPIO.output(pin, False)
+  GPIO.output(pin, True)
  
 # Define advanced sequence
 # as shown in manufacturers datasheet
